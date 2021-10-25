@@ -1,0 +1,32 @@
+.collaborators-wrapper {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  max-width: 200px;
+  justify-content: space-between;
+  margin: 0 0 30px 0;
+}
+
+.collaborators-container {
+  display: flex;
+  height: 36px;
+  width: fit-content;
+}
+
+.collaborator {
+  height: 30px;
+  width: 30px;
+  background-color: #ceaced;
+  border-radius: 30px;
+}
+
+.invite-button {
+  background-color: #ceaced;
+  height: 30px;
+  width: 72px;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}

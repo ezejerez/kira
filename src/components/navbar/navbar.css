@@ -1,0 +1,32 @@
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #592c84;
+  height: 45px;
+  padding: 0 10px 0 10px;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  height: 36px;
+  width: 80px;
+}
+
+.item {
+  height: 36px;
+  width: 36px;
+  background-color: #ceaced;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.profile-photo {
+  height: 36px;
+  width: 36px;
+  background-color: #ceaced;
+  border-radius: 36px;
+}
