@@ -1,5 +1,8 @@
 import React from 'react';
 import './card.css';
+import PlusIcon from '../../img/plus-icon.png';
+import DotsIcon from '../../img/3-dots-icon.png';
+import LongDescriptionIcon from '../../img/long-description-icon.png';
 
 function Card() {
   return (
@@ -7,7 +10,7 @@ function Card() {
       <div className='title-deploy-container'>
         <h1 className='card-title'>Card title</h1>
         <img
-          src='https://dummyimage.com/20x20/ceaced/ceaced.jpg'
+          src={DotsIcon}
           alt='Deploy cards button'
           className='deploy-button'
         />
@@ -27,8 +30,9 @@ function Card() {
             </p>
             <div className='long-description-assigned-container'>
               <img
-                src='https://dummyimage.com/20x20/ceaced/ceaced.jpg'
+                src={LongDescriptionIcon}
                 alt='Long description button'
+                className='long-description-icon'
               />
               <img
                 src='https://dummyimage.com/30x30/ceaced/ceaced.jpg'
@@ -82,8 +86,9 @@ function Card() {
       </div>
       <div className='add-a-card-container'>
         <img
-          src='https://dummyimage.com/20x20/ceaced/ceaced.jpg'
+          src={PlusIcon}
           alt='Add a card button'
+          className='plus-icon'
         />
         <button className='add-a-card-button'>Add a card</button>
       </div>
@@ -92,3 +97,4 @@ function Card() {
 }
 
 export default Card;
+

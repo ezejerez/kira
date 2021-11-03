@@ -1,5 +1,8 @@
 import React from 'react';
 import './navbar.css';
+import NotificationsIcon from '../../img/notifications-icon.png'
+import PlusIcon from '../../img/plus-icon.png'
+import ProfilePhoto from "../../img/profile-photo.jpg"
 
 function Navbar() {
   return (
@@ -7,13 +10,21 @@ function Navbar() {
       <div className='navbar-wrapper'>
         <div className='section-container'>
           <img
-            src='https://dummyimage.com/36x36/ceaced/ceaced.jpg'
+            src={ProfilePhoto}
             alt='Profile'
             className='profile-photo'
           />
-          <button className='item' />
+          <img      
+            src={NotificationsIcon}
+            alt='Notifications icon'
+            className='item' 
+          />
         </div>
-        <button className='item' />
+          <img
+            src={PlusIcon}
+            alt='Add a card icon'
+            className='item-2' 
+          />
       </div>
     </>
   );

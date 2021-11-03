@@ -16,7 +16,8 @@
 }
 
 .cards-container {
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
@@ -29,7 +30,7 @@
   max-height: 800px;
   background-color: #000;
   border-radius: 6px;
-  margin: 0 0 8px 0;
+  margin: 0 3px 8px 0;
 }
 
 .clasification-container {
@@ -51,7 +52,8 @@
   max-width: 95%;
   height: 40px;
   margin: 0 0 0 6px;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .long-description-assigned-container {
@@ -71,9 +73,8 @@
   display: flex;
   align-items: center;
   margin: 10px 6px 10px 20px;
-  width: 40%;
+  width: 38%;
   justify-content: space-between;
-  background-color: red;
 }
 
 .add-a-card-button {
@@ -103,4 +104,53 @@
   max-height: 130px;
   border-radius: 6px;
   margin: 10px 6px 0 6px;
+}
+
+/* ICONS */
+.plus-icon {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.deploy-button {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+
+.long-description-icon {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+/* GENERAL SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* CUSTOM SCROLLBARS */
+.task-description::-webkit-scrollbar {
+  width: 2px;
+}
+
+.task-description::-webkit-scrollbar-track {
+  background: #000;
 }

@@ -17,5 +17,30 @@ body {
 .main-cards-container {
   display: flex;
   justify-content: flex-start;
-  background-color: red;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.main-cards-container::-webkit-scrollbar-thumb {
+  background-color: lightblue;
+}
+
+.main-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.main-cards-container::-webkit-scrollbar-track {
+  display: none;
+}
+
+.main-cards-container::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.main-cards-container::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+
+.main-cards-container::-webkit-scrollbar-corner {
+  display: none;
 }
