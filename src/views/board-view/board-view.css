@@ -1,0 +1,47 @@
+body {
+  background-color: #111214;
+  width: 100%;
+}
+
+.content-wrapper {
+  margin: 0 20px 0 20px;
+  max-width: 1880px;
+  max-height: 96%;
+}
+
+.board-title {
+  color: #fff;
+  font-size: 20px;
+}
+
+.main-cards-container {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* SCROLLBAR */
+.main-cards-container::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.main-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.main-cards-container::-webkit-scrollbar-track {
+  display: none;
+}
+
+.main-cards-container::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.main-cards-container::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+
+.main-cards-container::-webkit-scrollbar-corner {
+  display: none;
+}

@@ -31,6 +31,8 @@
   background-color: #000;
   border-radius: 6px;
   margin: 0 3px 8px 0;
+  padding: 10px 6px 0 6px;
+  /* margin: 10px 6px 0 6px; */
 }
 
 .clasification-container {
@@ -69,12 +71,17 @@
   border-radius: 30px;
 }
 
+.add-a-card-wrapper {
+  width: 100%;
+}
+
 .add-a-card-container {
   display: flex;
   align-items: center;
   margin: 10px 6px 10px 20px;
   width: 38%;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .add-a-card-button {
@@ -103,7 +110,6 @@
 .task-image {
   max-height: 130px;
   border-radius: 6px;
-  margin: 10px 6px 0 6px;
 }
 
 /* ICONS */

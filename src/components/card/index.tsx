@@ -3,6 +3,7 @@ import './card.css';
 import PlusIcon from '../../img/plus-icon.png';
 import DotsIcon from '../../img/3-dots-icon.png';
 import LongDescriptionIcon from '../../img/long-description-icon.png';
+import TaskImage from '../../img/task-image.jpg';
 
 function Card() {
   return (
@@ -66,7 +67,7 @@ function Card() {
         <div className='card-container'>
           <div className='task-container'>
             <img
-              src='https://dummyimage.com/220x130/ceaced/ceaced.jpg'
+              src={TaskImage}
               alt='Long description button'
               className='task-image'
             />
@@ -84,6 +85,7 @@ function Card() {
           </div>
         </div>
       </div>
+      <div className='add-a-card-wrapper'>
       <div className='add-a-card-container'>
         <img
           src={PlusIcon}
@@ -91,6 +93,7 @@ function Card() {
           className='plus-icon'
         />
         <button className='add-a-card-button'>Add a card</button>
+      </div>
       </div>
     </div>
   );

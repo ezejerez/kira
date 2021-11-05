@@ -5,42 +5,95 @@ body {
 
 .content-wrapper {
   margin: 0 20px 0 20px;
-  max-width: 1880px;
-  max-height: 96%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.board-title {
-  color: #fff;
-  font-size: 20px;
-}
-
-.main-cards-container {
+.boards-section-container {
   display: flex;
   justify-content: flex-start;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  align-items: flex-start;
+  background-color: orange;
+  flex-direction: column;
+  width: 45%;
 }
 
-.main-cards-container::-webkit-scrollbar-thumb {
-  background-color: lightblue;
+.mini-boards-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
-.main-cards-container::-webkit-scrollbar {
-  display: none;
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-cards-container::-webkit-scrollbar-track {
-  display: none;
+.title-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
-.main-cards-container::-webkit-scrollbar-thumb {
-  display: none;
+.title {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
-.main-cards-container::-webkit-scrollbar-thumb:hover {
-  display: none;
+.mini-board {
+  background-color: #592c84;
+  width: 200px;
+  height: 130px;
+  border-radius: 5px;
 }
 
-.main-cards-container::-webkit-scrollbar-corner {
-  display: none;
+.mini-board-title {
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 0 0 10px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .title-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  .boards-section-container {
+    flex-flow: column wrap;
+    width: 95%;
+  }
+
+  .mini-board {
+    width: 90px;
+    height: 50px;
+  }
+
+  .mini-board-title {
+    font-size: 8px;
+    padding: 8px 0 0 8px;
+  }
 }

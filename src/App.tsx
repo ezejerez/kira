@@ -1,23 +1,84 @@
 import React from 'react';
 import './App.css';
-import Card from './components/card';
-import Collaborators from './components/collaborators';
-import Navbar from './components/navbar';
+import MainNavbar from './components/main-navbar';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import RecentlyIcon from './img/recently-icon.png'
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <Router>
+      <>
+      <MainNavbar />
       <div className='content-wrapper'>
-        <h1 className='board-title'>Board title</h1>
-        <Collaborators />
-        <div className='main-cards-container'>
-          <Card />
-          <Card />
-          <Card />
+        <div className='boards-section-container'> 
+          <div className='title-container'>
+            <img
+            src={RecentlyIcon}
+            alt='RecentlyIcon'
+            className='title-icon'
+            />       
+            <h1 className='title'>Recently viewed</h1>
+          </div>
+
+          <div className='mini-boards-wrapper'>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+          </div>
         </div>
+
+         <div className='boards-section-container'> 
+          <div className='title-container'>    
+            <h1 className='title'>Your boards</h1>
+          </div>
+
+          <div className='mini-boards-wrapper'>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+          </div>
+        </div>
+
+        <div className='boards-section-container'>  
+          <div className='title-container'>    
+            <h1 className='title'>Guest boards</h1>
+          </div>
+          <div className='mini-boards-wrapper'>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+            <div className='mini-board'>
+              <h1 className='mini-board-title'>Board title</h1>
+            </div>
+          </div>
+        </div> 
       </div>
-    </>
+      </>
+    </Router>
   );
 }
 
